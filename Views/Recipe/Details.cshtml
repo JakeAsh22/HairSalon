@@ -6,7 +6,12 @@
 
 <h2>Recipe Details</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name) </h3>
+<br>
+<h4>Instructions: @Html.DisplayFor(model => model.Instructions) </h4>
+<br>
+<h6>Ingredients: @Html.DisplayFor(model => model.Ingredients) </h6>
+<br>
 
 @if(@Model.Tags.Count == 0)
 {
